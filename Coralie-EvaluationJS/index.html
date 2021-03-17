@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Voitures à louer</title>
+</head>
+
+<body>
+    <header>
+        <div id="menu-hamburger">
+            <img src="css/images/list.svg" alt="menu" id="hamburger">
+            <nav>
+                <ul>
+                    <li><a href="#">Louer une voiture</a></li>
+                    <li><a href="#">Louer un utilitaire</a></li>
+                    <li><a href="#">Réserver un chauffeur</a></li>
+                    <li><a href="#">Découvrez nos agences</a></li>
+                    <li><a href="#">Mon compte</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <h1>Bienvenue à bord</h1>
+        <h2>Location de voiture 24h/24 et 7j/7</h2>
+        <form action="rent" method="get" id="form-location"> <!--TODO mettre les calendriers à cliquer, et faire en sorte que le texte initial s'efface lorsqu'on clique sur l'input-->
+            <div class="form__input">
+              <input value="Adresse de départ">
+            </div>
+            <div class="form__input">
+              <input value="Début de Location">
+            </div>
+            <div class="form__input">
+                <input name="date" value="Fin de location">
+            </div>
+            <div>
+              <input type="submit" value="Valider ma recherche" id="valider">
+            </div>
+          </form>
+    </header>
+    <main>
+        <div>
+            <div class="trier-par">
+                <h3>7 résultats</h3>
+                <button>Prix croissant ▼</button><!--TODO un petit menu déroulant, pour varier les choix-->
+            </div>
+            <section> <!--TODO à un moment le texte chevauche la flèche droite du slider. Faire en sorte que ça ne soit plus le cas!-->
+                <div class="slider">
+                    <div><img src="css/images/vehicule1.png" alt="voiture"></div>
+                    <div><img src="css/images/vehicule1.png" alt="voiture"></div>
+                </div>
+                <div class="text-section">
+                    <h3>Peugeot 208</h3>
+                    <p>Diesel, 5 portes, GPS, AutoRadio, Forfait 1000km (0,5/km supplémentaire)</p>
+                    <p>999€ - Agence de Paris</p>
+                    <a href="#">Réserver et payer</a>
+                </div>
+            </section>
+            <section>
+                <div class="slider">
+                    <div><img src="css/images/vehicule2.png" alt="voiture"></div>
+                    <div><img src="css/images/vehicule2.png" alt="voiture"></div>
+                </div>
+                <div class="text-section">
+                    <h3>Ford Focus</h3>
+                    <p>Diesel, 5 portes, GPS, AutoRadio, Forfait 1000km (0,5/km supplémentaire)</p>
+                    <p>999€</p>
+                    <a href="#">Réserver et payer</a>
+                </div>
+            </section>
+            <section>
+                <div class="slider">
+                    <div><img src="css/images/vehicule3.png" alt="voiture"></div>
+                    <div><img src="css/images/vehicule3.png" alt="voiture"></div>
+                </div>
+                <div class="text-section">
+                    <h3>Audi A1</h3>
+                    <p>Diesel, 5 portes, GPS, AutoRadio, Forfait 1000km (0,55/km supplémentaire)</p>
+                    <p>1 100€ - Agence de Paris</p>
+                    <a href="#">Réserver et payer</a>
+                </div>
+            </section>
+            <section>
+                <div class="slider">
+                    <div><img src="css/images/vehicule4.png" alt="voiture"></div>
+                    <div><img src="css/images/vehicule4.png" alt="voiture"></div>
+                </div>
+                <div class="text-section">
+                    <h3>Opel Mokka</h3>
+                    <p>Diesel, 5 portes, GPS, AutoRadio, Forfait 1000km (0,4/km supplémentaire)</p>
+                    <p>1 150€ - Agence de Paris</p>
+                    <a href="#">Réserver et payer</a>
+                </div>
+            </section>
+            <!--TODO ici il faudrait d'autres section qui apparaissent quand on arrive en bas. Mais comment faire?-->
+        </div>
+    </main>
+    <footer>
+        <img src="css/images/agence.jpg" alt="Photo de l'agence">
+        <p>Notre Agence de <strong>Paris</strong> <br>
+            300 boulevard de Vaugirard, 75015, Paris <br>
+            Ouvert 7j/7 de 9h à 13h et de 14h à 20h <br>
+            01 49 78 21 33 <br>
+            contact@vtc.com</p>
+    </footer>
+
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

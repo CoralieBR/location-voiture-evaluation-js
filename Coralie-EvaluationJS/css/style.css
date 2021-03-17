@@ -1,0 +1,156 @@
+/* TODO Ranger ce css! */
+* {
+    box-sizing: border-box;
+    font-family: sans-serif;
+    margin: 0;
+}
+
+
+/* ANCHOR Header */
+header {
+    color: white;
+    background-image: url("images/background.jpg");
+    background-size: cover;
+    text-align: center;
+    min-height: 300px;
+    position: relative;
+    padding-bottom: 1rem;
+}
+h1 {
+    padding: 1rem;
+}
+
+#hamburger {
+    text-align: right;
+    border: lightgrey 2px solid;
+    border-radius: 5px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    z-index: 99;
+}
+
+#menu-hamburger nav {
+    position: absolute;
+    display: none;
+    width: 100%;
+    background-color: white;
+    text-align: left;
+}
+#menu-hamburger li {
+    padding: 4px;
+}
+header nav a {
+    color: black;
+    text-decoration: none;
+    width: 100%;
+    padding: 4px;
+}
+header nav a:hover {
+    color: white;
+    background-color: grey;
+}
+
+
+#form-location{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: rgba(224, 224, 224, 0.753);
+    max-width: 900px;
+    margin: 250px auto 0 auto;
+}
+#form-location div {
+    flex: 1 1 100%;
+}
+.form__input {
+    padding: 8px;
+    border-radius: 2px;
+}
+#form-location div input{
+    width: 100%;
+    border: transparent;
+    padding: 6px;
+}
+#valider {
+    background-color: rgba(0, 128, 0, 0.562);
+    color: white;
+}
+#valider:hover {
+    background-color: green;
+}
+
+
+/* ANCHOR Main */
+
+main {
+    max-width: 900px;
+    margin: auto;
+    padding: 2rem 0;
+}
+.trier-par {
+    display: flex;
+    justify-content: space-between;
+}
+main section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid lightgrey;
+    padding: 2rem;
+}
+
+main section div p, main section div h3  {
+    display: none;
+}
+main section div a {
+    background-color: green;
+    color: white;
+    padding: 4px;
+    text-decoration: none;
+    border-radius: 5px;
+    
+}
+.slider {
+    max-width: 250px;
+}
+
+.text-section p {
+    padding: 4px;
+}
+.slider img {
+    max-width: 90%;
+    margin: auto;
+}
+.slider .slick-prev:before {
+    color: black;
+}
+.slider .slick-next:before {
+    color: black;
+}
+
+/* ANCHOR Footer */
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    max-width: 400px;
+    margin: 0 auto 1rem auto;
+}
+footer img {
+    max-width: 100px;
+}
+footer p {
+    font-size: small;
+}
+
+
+/* ANCHOR Media query */
+@media screen and (min-width: 800px) {
+    #form-location div {
+        flex: 1 1 33%;
+    }
+    main section div p, main section div h3 {
+        display: block;
+    }
+}
